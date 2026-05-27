@@ -5,4 +5,5 @@ asistencia=1
 is_activate=0
 print(asistencia)
 
-# mutabilida de datos se refierer en python le podemos cambiar de valor a las  variabales
+# mutabilida de datos 
+## se refierer en python le podemos cambiar de valor a las  variabales

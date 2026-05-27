@@ -6,7 +6,7 @@
 ## son datos que solo son acesibles en pequeñas porciones de codigo o " scope"
 first_numb:int|float=20
 second_numb:int|float=5 
-print(f"la suma de {first_numb} + {second_numb} es: {first_numb+second_numb}")
+print(f"la suma de {first_numb} + {second_numb} es: {first_numb+second_numb}") 
 
 print(f"la resta de {first_numb} - {second_numb} es: {first_numb-second_numb}")
 #multi
