@@ -93,8 +93,3 @@ amantes[buscar] # victor
 existe:bool="chapo" in amantes
 
 ```
-
-## Diccionarios:
-
-
-
