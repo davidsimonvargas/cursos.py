@@ -38,7 +38,7 @@ persona:dict={
 print(persona.get('nombre')) # celia
 # la diferenvia de este metodo es que nos permite manejar errores 
 print(persona.get('telefono') # none
-print(persona.get('telefono',"no disponible")) # si la calve telefono no exuste no mostrara none si no el segundo parametro que le pasemos al metodo get.
+print(persona.get('telefono',"no disponible")) # si la clave telefono no existe nos mostrara none si no el segundo parametro que le pasemos al metodo get.
 ```
 ## modificar elementos 
 **cambiar un valor existente**
@@ -62,6 +62,7 @@ tienda:dict[str:str|int]={
 # actualizar usando el metodo .update tengo dos maneras de usar este metodo:
 # 1. diccionarios 
 tienda.update({'RUC':4587232089564,'telefono':987456123})
+
 # 2. pares clave:valor
 tienda.update(h_atencion='9-12',gerente='kevin')
 ```
@@ -73,7 +74,39 @@ tienda:dict[str:str|int]={
 }
 el_eliminado=tienda.pop('RUC')
 tienda.popitem() # elimina el ultimo elemento
+
 # para limpiar todo el diccionario 
 tienda.clear()
 ```
 
+## recorre dicionario
+Recorrer un diccionario en programación (como en Python) es el proceso de iterar sobre sus elementos. Para ello, se utilizan bucles for que permiten extraer sus claves (keys), valores (values), o ambos de manera rápida.Aquí te muestro las formas más eficientes de hacerlo usando la estructura de datos básica:
+```python
+usuario = {"nombre": "Ana", "edad": 25}
+```
+1. Recorrer solo las CLAVESPor defecto, al recorrer un diccionario, iteras sobre sus claves.
+```python
+usuario = {"nombre": "Ana", "edad": 25}
+
+for clave in usuario:
+    print(clave)
+    # Imprime: nombre, edad
+```
+2. Recorrer solo los VALORESUtilizas el método .values() para acceder únicamente a la información.
+``` python
+usuario = {"nombre": "Ana", "edad": 25}
+
+for valor in usuario.values():
+    print(valor)
+    # Imprime: Ana, 25
+
+```
+3. Recorrer CLAVES y VALORES a la vezUtilizas el método .items() para obtener ambos datos en cada paso.
+```python
+usuario = {"nombre": "Ana", "edad": 25}
+
+for clave, valor in usuario.items():
+    print(f"{clave}: {valor}")
+    # Imprime: nombre: Ana \n edad: 25
+
+```
